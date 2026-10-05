@@ -1,0 +1,18 @@
+# dependencies / build output
+node_modules/
+dist/
+dist-ssr/
+__pycache__/
+*.pyc
+
+# superseded versions kept locally only
+website-static-old/
+logo/v1-iota-chi/
+logo/v2-yota-horizontal/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

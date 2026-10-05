@@ -1,0 +1,15 @@
+{
+  "books": [
+    {
+      "id": "helmi-cross-questions",
+      "file": "helmi-cross-questions.json",
+      "title": "أسئلة حول الصليب",
+      "author": "أ. حلمي القمص يعقوب",
+      "description": "",
+      "source": "https://st-takla.org/books/helmy-elkommos/cross/index.html",
+      "chapter_count": 95,
+      "paragraph_count": 2232,
+      "order": 1000
+    }
+  ]
+}
