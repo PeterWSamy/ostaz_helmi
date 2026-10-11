@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
+import BookCover from '../components/BookCover.jsx'
 import SearchForm from '../components/SearchForm.jsx'
 import { ErrorView, Loading } from '../components/Status.jsx'
-import { YotaCross } from '../components/Yota.jsx'
 import { loadBook, useAsync } from '../lib/data.js'
 import { arabicNumber, chapterPath, stripNumber } from '../lib/format.js'
 import { usePageTitle } from '../lib/usePageTitle.js'
@@ -19,7 +19,7 @@ export default function BookPage() {
     <>
       <div className="crumbs"><Link to="/">المكتبة</Link> ‹ {m.title}</div>
       <section className="book-head">
-        <div className="book-cover"><YotaCross /></div>
+        <BookCover id={m.id} title={m.title} />
         <div>
           <h1>{m.title}</h1>
           <div className="meta">{m.author} · {arabicNumber(m.chapter_count)} فصل</div>

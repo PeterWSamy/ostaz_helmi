@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import FaqItem from '../components/FaqItem.jsx'
 import SearchForm from '../components/SearchForm.jsx'
 import { ErrorView, Loading } from '../components/Status.jsx'
-import { YotaBadge, YotaCross } from '../components/Yota.jsx'
+import BookCover from '../components/BookCover.jsx'
+import { YotaBadge } from '../components/Yota.jsx'
 import { loadFaqs, loadLibrary, useAsync } from '../lib/data.js'
 import { arabicNumber } from '../lib/format.js'
 import { usePageTitle } from '../lib/usePageTitle.js'
@@ -42,7 +43,7 @@ function Library({ books, faqItems }) {
         <div className="book-grid">
           {books.map((b) => (
             <Link key={b.id} className="book-card" to={`/book/${encodeURIComponent(b.id)}`}>
-              <div className="book-cover"><YotaCross /></div>
+              <BookCover id={b.id} title={b.title} />
               <div className="book-card-body">
                 <h3>{b.title}</h3>
                 <div className="meta">{b.author} · {arabicNumber(b.chapter_count)} فصل</div>
